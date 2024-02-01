@@ -1,0 +1,213 @@
+.full-package-view-main{
+    width: 100%;
+    margin: 100px 0px;
+}
+.full-package-view-sub{
+    margin: 100px;
+}
+.full-package-view-img{
+    width: 100%;
+    border-bottom: 1px rgb(212, 204, 204) solid;
+    padding-bottom: 40px;        
+}
+
+.full-package-view-img-div{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-div {
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden; 
+}
+.prev-btn i{
+    font-size: xx-large;
+    background-color: black;
+    width: 50px;
+    color: white;
+    border-radius: 10px;
+}
+.prev-btn i:hover{
+box-shadow: 0px 0px 10px aqua;
+}
+.next-btn i{
+    font-size: xx-large;
+    background-color: black;
+    width: 50px;
+    color: white;
+    border-radius: 10px;
+}
+.next-btn i:hover{
+    box-shadow: 0px 0px 10px aqua;
+    }
+    
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1; 
+    border: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.img {
+    max-width: 800px; /* Ensure image doesn't exceed container width */
+    max-height: 100%; /* Ensure image doesn't exceed container height */
+    display: block; /* Ensure image is displayed as a block element */
+    margin: auto; /* Center the image horizontally */
+}
+.prev-btn {
+    left: 10px; /* Adjust the left position as needed */
+}
+
+.next-btn {
+    right: 10px; /* Adjust the right position as needed */
+}
+.fa-regular.fa-heart{
+position: relative;
+left: 360px;
+right: 10px;
+top: 10px;
+font-size: 30px;
+color: orange;
+}
+
+.fa-regular.fa-heart:active{
+    color: aqua;
+}
+
+.fa-solid.fa-heart{
+    position: relative;
+    left: 360px;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
+    color: orange;    
+}
+
+.full-package-view-header, .full-package-view-location{
+    text-align: start;
+    margin: 5px;
+}
+.full-package-view-location{
+    opacity: 0.50;
+    font-size: 0.9rem;
+    padding-bottom: 30px;
+    border-bottom-color: rgb(133, 124, 124);
+    border-bottom-width: 1px ;
+    border-bottom-style: solid;
+    margin-bottom: 30px ;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.full-package-view-sub1{
+    display: flex;
+    width: 250px;
+    align-items: center;
+}
+
+.full-package-view-sub0{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.full-package-view-sub1-txts{
+    text-align: start;
+    margin-left: 10px;
+}
+
+.full-package-view-sub1 i{
+    color: rgb(76, 217, 217);
+    font-size: 1.2rem;
+}
+
+.full-package-view-header{
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgb(131, 125, 125);
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: hidden;
+ }
+.img{
+    width: 70%;
+    padding: 20px;
+}
+
+.pbtn, .nxbtn{
+    z-index: 1;
+}
+
+@media screen and (min-width:320px) and (max-width:550px){
+    .full-package-view-sub{
+        margin: 20px;
+    }
+    .full-package-view-img-div{
+        width: 100%;
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-size:contain;
+        display: flex;
+        
+    }
+    
+    .fa-regular.fa-heart{
+        
+        left: 10px;
+        top: 10px;
+        font-size: 20px;
+    
+    border: 0px orange solid;
+    border-radius: 0px;
+    }
+
+    .fa-solid.fa-heart{
+        position: relative;
+        left: 10px;
+        top: 10px;
+        font-size: 20px;
+        border: 0px orange solid;
+        border-radius: 0px;
+        color: orange;
+   
+    }
+       
+}
+
+@media screen and (min-width:700px) and (max-width:1000px) {
+    .fa-regular.fa-heart{
+        position: relative;
+        left: 230px;
+        right: 100px;
+        top: 10px;
+        font-size: 30px;
+        }
+
+    .fa-solid.fa-heart{
+        position: relative;
+        left: 230px;
+        right: 100px;
+        top: 10px;
+        font-size: 30px;
+            color: orange;
+       
+        }
+        
+}

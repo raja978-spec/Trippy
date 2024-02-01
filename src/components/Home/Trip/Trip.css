@@ -1,0 +1,82 @@
+.tripCards{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 6rem;
+}
+.trip-card{
+    width: 32%;
+    text-align: center;
+
+    /* box-shadow: h-offset v-offset blur spread color; */
+    
+    box-shadow: 0 5px 25px 2px rgb(0,0,0,0);
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 1;
+}
+.trip-card h2,p{
+margin: 10px;    
+}
+
+.trip-img{
+    height: 200px;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.trip-img:hover img{
+
+/* scale an element in both dimensions (width and height)
+ by a specified factor. In this case, 1.2 represents 
+ the scaling factor.
+*/
+
+transform: scale(1.2);
+
+}
+
+.trip-img img{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    border-radius: 7px;
+}
+
+@media screen and (min-width:320px) and (max-width:550px){
+    .tripCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .trip-card{
+          width: 300px;
+          margin: 10px;
+          box-shadow: 0 5px 25px 2px rgb(0,0,0,0);
+          border-radius: 7px;
+          cursor: pointer;
+          padding: 1;
+      }
+      .trip-card h2,p{
+      margin: 10px;    
+      }
+      
+      .trip-img{
+          height: 200px;
+          overflow: hidden;
+          border-radius: 7px;
+      }
+      
+      .trip-img:hover img{
+      transform: scale(1.2);
+      }
+      
+      .trip-img img{
+          width: 100%;
+          height: 100%;
+          transition: 0.3s ease-in-out;
+          border-radius: 7px;
+      }
+          
+}

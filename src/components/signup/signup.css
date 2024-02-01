@@ -1,0 +1,57 @@
+.main-ft-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .main-contact {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button.signupbtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.signupbtn:hover {
+    background-color: #0056b3;
+  }
+  
+  .main-contact button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ccc;
+  }
+  
+  @media (max-width: 600px) {
+    .main-contact {
+      width: 90%;
+    }
+  }
+  

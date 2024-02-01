@@ -1,0 +1,121 @@
+.destination-main{
+    /* leftrigth, topbottom */
+    /* top,right,bottom, left */
+    /* top , leftright, bottom */
+    margin: 4rem 6rem;    
+}
+.destination-main, div{
+    text-align: center;
+}
+.firt-destination{
+    display: flex;
+    margin-top: 4.5rem;
+}
+
+.firt-destination-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+}
+
+.destination-txt{
+    width: 55%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.dest-image{
+    display: flex;
+    position: relative;
+    width: 35%;
+    align-items: center;
+}
+
+.dest-image img{
+    width: 50%;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px
+}
+.destination-main, h1{
+    margin-bottom: 1rem;
+}
+
+.dest-image img:nth-child(2){
+    position: relative;
+    bottom: 25px;
+}
+.destination-p
+{
+    margin:20px;
+    padding:1.2rem;
+    text-align:start;
+}
+@media screen and (max-width:550px) {
+
+    .destination-main{
+    display: block;  
+    margin: 1rem 4rem;    
+    }
+
+    h1{
+        font-size:1.5rem  
+    }
+
+    p{
+        font-size: 0.9rem;
+    }
+
+    .destination-p
+    {
+    margin:0px;
+    padding:5px;
+    text-align:start;
+    }
+
+    .destination-main{
+        margin-bottom: 0.0rem;
+    }
+    .firt-destination{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+
+    }
+        
+    .firt-destination-reverse{
+        display: block;
+        align-items: center;
+        
+        margin-top: 0.0rem;
+    }
+    
+    .destination-txt{
+        margin: 0rem 1rem;
+       font-size: 0.9rem;
+       width:300px
+    }
+    
+    .dest-image{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        margin:10px
+    }
+    
+    .dest-image img{
+        width: 100%;
+        object-fit: cover;
+        margin: 30px;
+        border-radius: 10px
+    }
+    
+    .dest-image img:nth-child(2){
+        position: relative;
+        bottom: 25px;
+    }
+    
+        
+}

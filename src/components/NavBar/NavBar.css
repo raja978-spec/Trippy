@@ -1,0 +1,212 @@
+.body{
+    padding: 70px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    /* The top property is used to position an element 
+    relative to its containing element or the nearest 
+    positioned ancestor.*/
+
+    top: 3px;
+    height: 70px;
+    box-shadow: 0px 0px 10px gray;
+
+    /* When an element is set to "position: fixed;", 
+    it is positioned relative to the viewport, 
+    regardless of its containing element.
+    */
+    position:fixed;
+    border-radius: 10px;
+    background-color: aliceblue;
+    z-index: 2;
+}
+.menu-icons{
+
+    /*When applied to an element, it completely removes 
+    the element from the document layout.*/
+
+    display: none;
+}
+.logo{
+    margin: 30px;
+
+    /* They provide scalability and adaptability to 
+    different screen sizes and user preferences.*/
+
+    font-size:xx-large;
+    font-weight: 800;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px; 
+    align-items: center;
+}
+
+.link{
+    margin: 10px;
+    padding: 10px;
+}
+
+.link i{
+    margin: 10px;
+}
+
+.link a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.link:hover{
+    background-color: aquamarine;
+    color: aliceblue;
+    border-radius: 4px;
+   
+}
+
+.link a:hover{
+    background-color: aquamarine;
+    color: aliceblue;
+    border-radius: 4px;
+   
+}
+
+@media screen and (max-width:850px) {
+
+    .navbar{
+       height: 40px;
+       margin: 10px 0px;
+    }
+    .logo{
+        margin: 30px;
+        font-size:large;
+        font-weight: 800;
+    }
+    
+    .menu-icons{
+        display: block;
+        position: relative;
+        right: 20px;
+        font-size: 20px;        
+    }
+
+    .menu-icons:hover{
+        color: aqua;
+    }
+    
+    .nav-links{
+       display: flex;
+       flex-direction: column;
+       padding: 20px;
+       width: 100%;
+       position: absolute;
+       background-color:white;
+       top: 70px;
+       left: -200%;
+       transition: 0.3s ease-in-out;
+       box-shadow: 0px 0px 10px black;
+      }
+
+      .nav-links.active{
+        display: flex;
+       flex-direction: column;
+       padding: 20px;
+       width: 100%;
+       position: absolute;
+       background-color:white;
+       top: 70px;
+       left: 0%;
+       transition: 0.3s ease-in-out;
+       box-shadow: 0px 0px 10px black;
+      
+      }
+
+    .link{
+        margin: 5px;
+        padding: 10px;
+
+    }
+    .link i{
+        margin: 2px;
+    }   
+       
+}
+@media screen and (min-width:220px) and (max-width:550px) {
+
+    .navbar{
+       height: 40px;
+       position: fixed;
+       width: 100%;
+       border-radius: 10px;
+    }
+    .logo{
+        margin: 30px;
+        font-size:large;
+        font-weight: 800;
+    }
+    
+    .menu-icons{
+
+        /* occupy the entire width available in their 
+        container by default.*/
+
+        display: block;
+        position: relative;
+        right: 20px;
+        font-size: 20px;        
+    }
+
+    .menu-icons:hover{
+        color: aqua;
+    }
+    
+    .nav-links{
+       display: flex;
+       flex-direction: column;
+       padding: 20px;
+       width: 100%;
+       position: fixed;
+       background-color:white;
+       top: 70px;
+       left: -200%;
+       transition: 0.3s ease-in-out;
+       box-shadow: 0px 0px 10px black;
+      }
+
+      .nav-links.active{
+        display: flex;
+       flex-direction: column;
+       padding: 20px;
+       width: 100%;
+
+       /*When an element is set to "position: absolute;",
+        it is positioned relative to its closest positioned
+         ancestor element.
+        */
+
+       position: absolute;
+       background-color:white;
+       top: 70px;
+       left: 0%;
+       transition: 0.3s ease-in-out;
+       box-shadow: 0px 0px 10px black;
+      
+      }
+
+    .link{
+        margin: 5px;
+        padding: 10px;
+
+    }
+    .link i{
+        margin: 2px;
+    }   
+       
+}

@@ -1,0 +1,22 @@
+.main-abt{
+    margin: 4rem 6rem;
+    text-align: center;
+}
+.main-abt p{
+    margin-bottom: 0.8rem;
+    text-align: start;
+    padding: 10px;
+}
+
+@media screen and (min-width:320px) and (max-width:550px) {
+    .main-abt{
+        margin: 0rem 0rem;
+        text-align: center;
+    }
+    .main-abt p{
+        margin-bottom: 0.8rem;
+        text-align: start;
+        padding: 10px;
+    }
+        
+}
