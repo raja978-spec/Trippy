@@ -399,7 +399,7 @@ function Report() {
                 document.execCommand('formatBlock', false, '<div style="line-height:' + value + '">');
             }
     
-            document.getElementById('editor').addEventListener('input', function () {
+            document.getElementById('editor')?.addEventListener('input', function () {
                 // Update your data or perform any desired action when the content changes
                 var content = this.innerHTML;
                 console.log(content);
