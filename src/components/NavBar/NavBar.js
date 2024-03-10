@@ -2,6 +2,7 @@ import './NavBar.css'
 import { Component, useEffect, useState, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import userContext from '../../utils/contexts/context';
+import { strings } from '../../i18n';
 
 export default function NavBar() {
 
@@ -27,7 +28,7 @@ export default function NavBar() {
         <nav className='navbar' id="navbar">
 
             <div className='logo'>
-                Trippy
+                {strings("Trippy")}
             </div>
 
             <div className='menu-icons'
@@ -41,31 +42,40 @@ export default function NavBar() {
                 <li className='link'>
 
                     <Link to={'/'}>
-                        Home
+                        {strings("Home")}
                         <i class="fa-solid fa-house-user" aria-hidden="true"></i>
                     </Link>
                 </li>
 
                 <li className='link'>
                     <Link to={'/about'}>
-                        About
+                        {strings("About")}
                         <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
                     </Link>
                 </li>
 
                 <li className='link'>
                     <Link to={'/service'}>
-                        Services
+                        {strings("Services")}
                         <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
                     </Link>
                 </li>
 
                 <li className='link'>
                     <Link to={'/contact'}>
-                        Contact
+                        {strings("Contact")}
                         <i class="fa-solid fa-address-book" aria-hidden="true"></i>
                     </Link>
                 </li>
+
+                <li className='link'>
+                    <Link to={'/language'}>
+                        {strings("Change Language")}
+                        <i class="fa-solid fa-address-book" aria-hidden="true"></i>
+                    </Link>
+                </li>
+
+               
 
                 {
                     !auth.user ?
@@ -73,14 +83,14 @@ export default function NavBar() {
 
                             <li className='link'>
                                 <Link to={"/signup"} >
-                                    Signup
+                                    {strings("Signup")}
                                 </Link>
                             </li>
 
                         ) : (
                             <li className='link'>
                                 <Link to={"/signup"} onClick={logoutHandler} >
-                                    Logout
+                                    {strings("Logout")}
                                 </Link>
                             </li>
 

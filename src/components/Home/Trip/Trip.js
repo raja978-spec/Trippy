@@ -1,5 +1,6 @@
 import './Trip.css'
 import TripData from './TripData'
+import { strings } from '../../../i18n'
 
 export default function Trip() {
 
@@ -25,10 +26,15 @@ export default function Trip() {
     return (
         <div className="trip-main">
             <div style={{ textAlign: "center" }}>
-                <h1 style={{ marginBottom: "1rem" }}>Recent Trips</h1>
+                <h1 style={{ marginBottom: "1rem" }}>
+                    {strings("Recent Trips")}</h1>
                 <p style={{ opacity: 0.70 }}>
-                    You can discover unique destination
-                    using Google Maps.
+                    {
+                        strings(
+                            "You can discover unique destination using Google Maps."
+                        )
+                    }
+                    
                 </p>
             </div>
 
@@ -36,7 +42,7 @@ export default function Trip() {
                 {
                     tripImages.map((e) => {
                         return (
-                            <TripData h={e.header} p={e.paragraph} i={e.imgurl} />
+                            <TripData h={ strings(e.header) } p= { e.paragraph} i={ e.imgurl} />
                         )
                     })
                 }

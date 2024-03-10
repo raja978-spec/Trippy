@@ -8,15 +8,15 @@ import Login from './components/login/login';
 import SignUp from './components/signup/signup';
 import ContextProvider from './utils/contexts/contextprovider';
 import FullPackageView from './components/Service/fullpackageview/fullpackageview';
-import Main from './testcomponent/testcomponent';
 import TourPackages from './components/Service/tourpackages/tourpackages';
+import LanguageChanger from './components/language';
+import Report from './testcomponent';
+
+import { UserLangGetter } from './i18n';
 
 function App() {
   return (
     <>
-
-// the untheunteaad 
-
 
      <ContextProvider>
 
@@ -26,14 +26,19 @@ function App() {
       <Route path='/contact' element={<Contact/>} />
       <Route path='/service' element={<Service/>} />
       <Route path='/view-package' element={<FullPackageView/>} />
-      <Route path='/test' element={<Main/>} />
       <Route path='/login' element={<Login/>} />
       <Route path='/signup' element={<SignUp/>} />  
-      <Route path='/trip-package' element={<TourPackages/>} />    
+      <Route path='/trip-package' element={<TourPackages/>} /> 
+      <Route path='/language' element={<LanguageChanger/>} />  
+      <Route path='/user-lang' element={<UserLangGetter/>} />   
     </Routes>
   
      </ContextProvider>
-    
+
+     {/*  Report project */}
+     <Routes>
+      <Route path='/report' element={<Report/>} />
+     </Routes>
     
     </>
     

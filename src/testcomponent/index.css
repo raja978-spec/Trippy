@@ -1,0 +1,250 @@
+body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            padding-top: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 10px;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content {
+            margin-left:250px;
+            padding: 20px;
+        }
+        #editor-container {
+            flex: 100;
+            padding: 100px;
+            background-color: #d6dfe0;
+        }
+
+        #editor {
+            border: 1px solid #ccc;
+            min-height: 400px;
+            background-color: #ec9a9a;
+        }
+
+        #edit-options {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            background-color: #faf6f8;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            margin-bottom: 5px;
+            background-color: #b2b3a9;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+            font-weight: bold;   
+        }
+
+        button:hover {
+            background-color: #1b1b1a;
+        }
+
+        select {
+            margin-bottom: 5px;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        input[type="color"] {
+            margin-bottom: 5px;
+            padding: 3px;
+            border-radius: 3px;
+        }
+
+        /*  2 */
+        body {
+                margin: 0;
+                padding: 20px; /* Add padding to provide some space around the content */
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4; /* Set a background color for better visibility */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            .report-info {
+                max-width: 600px; /* Adjust the width as needed */
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+                text-align: center;
+                margin-bottom: 20px; /* Add margin at the bottom for spacing */
+            }
+    
+            .report-info h1 {
+                color: #333;
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+    
+            .report-info p {
+                color: #555;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+    
+            /* Style the file input as a button */
+            .file-input {
+                display: none; /* Hide the default file input */
+            }
+    
+            .file-button {
+                margin-top: 20px; /* Adjust the margin as needed */
+                padding: 10px 20px;
+                background-color: #3498db;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                display: inline-block;
+            }
+    
+            #selected-image-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 10px; /* Adjust the margin as needed */
+            }
+    
+            #selected-image {
+                max-width: 600px; /* Set a fixed maximum width */
+                max-height: 400px; /* Set a fixed maximum height */
+                display: none; /* Hide the image initially */
+            }
+    
+            .result-box {
+                max-width: 600px;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                margin-bottom: 20px;
+            }
+    
+            .result-box h2 {
+                color: #333;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+    
+            .result-box p {
+                color: #555;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+    
+            .lorem-div {
+                max-width: 600px;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+    
+            .lorem-div p {
+                color: #555;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+    
+            .translate-button {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                background-color: #3498db;
+                color: #fff;
+            }
+    
+            #google_translate_element {
+                display: none; /* Hide the translation element by default */
+                position: fixed;
+                top: 60px; /* Adjust the top position as needed */
+                right: 20px;
+            }
+
+            /* 3 */
+
+            canvas {
+                display: block;
+                margin: auto;
+                margin-bottom: 20px;
+              }
+
+            /*  4 */
+
+                body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    
+    body { 
+      background-color: #fafafe; 
+      color: #fff; 
+      background: linear-gradient(to left, #e0e1e9, #dedfe6);
+    }
+    #chartdiv {
+      width: 500px;
+      height: 500px;
+    }
+
+    .traffic-light {
+            width: 100px;
+            height: 300px;
+            border: 2px solid black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .light {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        
+        .red {
+            background-color: red;
+        }
+        
+        .yellow {
+            background-color: yellow;
+        }
+        
+        .green {
+            background-color: green;
+        }
+    
